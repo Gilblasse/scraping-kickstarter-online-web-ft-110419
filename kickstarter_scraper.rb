@@ -7,6 +7,7 @@ def create_project_hash
   doc = Nokogiri::HTML(html)
   project_list = doc.css("#projects_list > li")
   
+<<<<<<< HEAD
   project_list.each_with_object({}) do |project,h|  
       title = project.css("h2 a").text
         h[title] = {
@@ -17,3 +18,7 @@ def create_project_hash
         }
   end
 end
+=======
+ binding.pry
+end
+>>>>>>> a99f7547b752698b806d000f1d1b4ecc46c03eec
